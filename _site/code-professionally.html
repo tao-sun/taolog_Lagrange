@@ -1,0 +1,586 @@
+<!doctype html>
+<html>
+
+<head>
+
+  <title>
+    
+      Write Code Professionally | Tao's
+    
+  </title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/syntax.css">
+  <!-- Use Atom -->
+  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Tao's" />
+  <!-- Use RSS-2.0 -->
+  <!--<link href="/rss-feed.xml" type="application/rss+xml" rel="alternate" title="Tao's | a minimalist Jekyll theme"/>
+  //-->
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quattrocento+Sans">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+    MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+      });
+  </script>
+
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-112060364-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+  <!-- Use Jekyll SEO plugin -->
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Write Code Professionally | Tao’s</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Write Code Professionally" />
+<meta name="author" content="Tao Sun" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="“A simple tutorial in understanding Matrix capsules with EM Routing in Capsule Networks”" />
+<meta property="og:description" content="“A simple tutorial in understanding Matrix capsules with EM Routing in Capsule Networks”" />
+<link rel="canonical" href="http://localhost:4000/code-professionally.html" />
+<meta property="og:url" content="http://localhost:4000/code-professionally.html" />
+<meta property="og:site_name" content="Tao’s" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2017-11-14T06:00:00-05:00" />
+<script type="application/ld+json">
+{"author":{"@type":"Person","name":"Tao Sun"},"description":"“A simple tutorial in understanding Matrix capsules with EM Routing in Capsule Networks”","headline":"Write Code Professionally","dateModified":"2017-11-14T06:00:00-05:00","datePublished":"2017-11-14T06:00:00-05:00","@type":"BlogPosting","url":"http://localhost:4000/code-professionally.html","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/code-professionally.html"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+</head>
+
+
+<body>
+
+  <div class="container">
+    <header class="masthead">
+  <h3 class="masthead-title">
+    <a href="/">Tao's</a>
+    <!--<small class="masthead-subtitle">a minimalist Jekyll theme</small>-->
+    <div class="menu">
+  <nav class="menu-content">
+    
+      <a href="/menu/about.html">About</a>
+    
+      <a href="/menu/writing.html">Writing</a>
+    
+      <a href="/menu/contact.html">Contact</a>
+    
+  </nav>
+  <nav class="social-icons">
+    
+  
+  
+    <a href="https://www.github.com/tao-sun" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="http://www.linkedin.com/in/sunxcint/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="mailto:sunxcint@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="/feed.xml"><i class="fa fa-rss-square" aria-hidden="true"></i></a>
+  
+
+  </nav>
+</div>
+
+  </h3>
+</header>
+
+
+    <div class="post-container">
+      <h1>
+  Write Code Professionally
+</h1>
+
+
+
+<p>As a student in CS, you may often ask yourself what is good code and what is bad code. In this post, I will take as an example a code snippet written by a Phd student to briefly discuss the issue.</p>
+
+<p>Functionality of snippet is pretty simple, that is resizing images or image segmentation in a specified directory and output the results into another specified directory.
+中文</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">"""
+
+
+
+
+
+
+"""</span>
+
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">glob</span>
+<span class="kn">import</span> <span class="nn">cv2</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">import</span> <span class="nn">copy</span>
+<span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+
+
+<span class="s">"""
+os.chdir ('/home/zhewei/Zhewei/CamVid_MultiScale/test/')
+for files in glob.glob('*.png'):
+    print (files)
+    img = cv2.imread(files)
+    print (img.shape)
+    norm_img = copy.deepcopy(img)
+
+    blur = cv2.GaussianBlur(norm_img, (5,5), 0)
+    Half_size = cv2.resize(blur, (0,0), fx=0.5, fy=0.5)
+    blur2 = cv2.GaussianBlur(Half_size, (5,5), 0)
+    Quarter_size = cv2.resize(blur2, (0,0), fx=0.5, fy=0.5)
+
+    norm_img = cv2.normalize(Quarter_size, dst=norm_img, alpha=0, beta=1, norm_type=cv2.NORM_MINMAX, dtype=cv2.CV_32F)
+    norm_img = np.uint8(norm_img*255)
+    clahe = cv2.createCLAHE(clipLimit=3.0, tileGridSize=(4,4))
+    cl1 = clahe.apply(norm_img[:,:,0])
+    cl2 = clahe.apply(norm_img[:,:,1])
+    cl3 = clahe.apply(norm_img[:,:,2])
+    cl = cv2.merge((cl1, cl2, cl3))
+    #cv2.imshow('result', cl)
+    #cv2.imshow('origin', img)
+    #cv2.waitKey(0)
+    #print (a)
+    cv2.imwrite('/home/zhewei/Zhewei/CamVid_MultiScale/test_small/'+files, cl)
+"""</span>
+
+
+<span class="n">os</span><span class="p">.</span><span class="n">chdir</span> <span class="p">(</span><span class="s">'/home/zhewei/Zhewei/CamVid_MultiScale/trainannot/'</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">files</span> <span class="ow">in</span> <span class="n">glob</span><span class="p">.</span><span class="n">glob</span><span class="p">(</span><span class="s">'*.png'</span><span class="p">):</span>
+    <span class="k">print</span> <span class="p">(</span><span class="n">files</span><span class="p">)</span>
+    <span class="n">img</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">imread</span><span class="p">(</span><span class="n">files</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+    <span class="c1">#tmp = copy.deepcopy(img)
+</span>    <span class="k">print</span> <span class="p">(</span><span class="n">img</span><span class="p">.</span><span class="n">shape</span><span class="p">)</span>
+    <span class="n">all_pixel</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">img</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]):</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">img</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]):</span>
+            <span class="n">all_pixel</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">img</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">])</span>
+            <span class="c1">#tmp[i,j] = img[i,j]*10
+</span>
+    <span class="n">class_list</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">all_pixel</span><span class="p">))</span>
+    <span class="k">for</span> <span class="n">classNO</span><span class="p">,</span> <span class="n">classPixel</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">class_list</span><span class="p">):</span>
+        <span class="n">tmp</span> <span class="o">=</span> <span class="n">copy</span><span class="p">.</span><span class="n">deepcopy</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">tmp</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]):</span>
+            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">tmp</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]):</span>
+                <span class="k">if</span> <span class="n">img</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">]</span> <span class="o">!=</span> <span class="n">classPixel</span><span class="p">:</span>
+                    <span class="n">tmp</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">tmp</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="mi">255</span>
+
+        <span class="n">blur</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">GaussianBlur</span><span class="p">(</span><span class="n">tmp</span><span class="p">,</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">),</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="n">Half_size</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">resize</span><span class="p">(</span><span class="n">blur</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span> <span class="n">fx</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">fy</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+        <span class="n">blur2</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">GaussianBlur</span><span class="p">(</span><span class="n">Half_size</span><span class="p">,</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">),</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="n">Quarter_size</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">resize</span><span class="p">(</span><span class="n">blur2</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span> <span class="n">fx</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">fy</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+
+        <span class="n">norm_img</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">normalize</span><span class="p">(</span><span class="n">Quarter_size</span><span class="p">,</span> <span class="n">dst</span><span class="o">=</span><span class="n">tmp</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">beta</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">norm_type</span><span class="o">=</span><span class="n">cv2</span><span class="p">.</span><span class="n">NORM_MINMAX</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">cv2</span><span class="p">.</span><span class="n">CV_32F</span><span class="p">)</span>
+        <span class="n">norm_img</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">uint8</span><span class="p">(</span><span class="n">norm_img</span><span class="o">*</span><span class="mi">255</span><span class="p">)</span>
+        <span class="n">clahe</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">createCLAHE</span><span class="p">(</span><span class="n">clipLimit</span><span class="o">=</span><span class="mf">3.0</span><span class="p">,</span> <span class="n">tileGridSize</span><span class="o">=</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>
+        <span class="n">cl1</span> <span class="o">=</span> <span class="n">clahe</span><span class="p">.</span><span class="nb">apply</span><span class="p">(</span><span class="n">norm_img</span><span class="p">)</span>
+        <span class="n">cl1</span> <span class="o">=</span> <span class="n">cl1</span><span class="p">.</span><span class="n">reshape</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span> <span class="n">cl1</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">cl1</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
+        <span class="k">if</span> <span class="n">classNO</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">stack_img</span> <span class="o">=</span> <span class="n">cl1</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">stack_img</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">concatenate</span><span class="p">((</span><span class="n">stack_img</span><span class="p">,</span> <span class="n">cl1</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+
+    <span class="c1"># go back to grey image
+</span>    <span class="n">final_img</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">stack_img</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">stack_img</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">2</span><span class="p">]),</span><span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="p">.</span><span class="nb">int</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">i_s</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">stack_img</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]):</span>
+        <span class="k">for</span> <span class="n">j_s</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">stack_img</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">2</span><span class="p">]):</span>
+            <span class="n">tmp_array</span> <span class="o">=</span> <span class="n">stack_img</span><span class="p">[:,</span><span class="n">i_s</span><span class="p">,</span><span class="n">j_s</span><span class="p">]</span>
+            <span class="n">max_index</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">tmp_array</span><span class="p">)</span>
+            <span class="n">final_img</span><span class="p">[</span><span class="n">i_s</span><span class="p">,</span> <span class="n">j_s</span><span class="p">]</span> <span class="o">=</span> <span class="n">class_list</span><span class="p">[</span><span class="n">max_index</span><span class="p">]</span>
+            <span class="c1">#print tmp_array
+</span>    <span class="c1">#cv2.imshow('result', final_img)
+</span>    <span class="c1">#cv2.waitKey(0)
+</span>    <span class="c1">#cv2.imwrite('final.png', final_img)
+</span>    <span class="c1">#print (a)
+</span>    <span class="n">cv2</span><span class="p">.</span><span class="n">imwrite</span><span class="p">(</span><span class="s">'/home/zhewei/Zhewei/CamVid_MultiScale/trainannot_small/'</span><span class="o">+</span><span class="n">files</span><span class="p">,</span> <span class="n">final_img</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>I will refactor the code step by step, talking about the following three aspects of a good code respectively.</p>
+
+<ul>
+  <li>easy to use</li>
+  <li>easy to read</li>
+  <li>easy to modify/update</li>
+</ul>
+
+<h5 id="easy-to-use">Easy to Use</h5>
+
+<p>Although this snippet is supposed to use internally, usability is pretty important because easy-to-use code could enchance productivity substentially and avoid unnecessary. For a programmer, good usability always means well-designed interface, whatever it is Graphical User Interface (GUI) or Command-line Interface (CLI). We decide to apply CLI in this case.</p>
+
+<p>Design comes from requirements. According to functionally of the code, the interface at least should let a user to specify 3 things, that is the operation (resize original images or image segmentations), the folder the input data resides and the folder where the results ouput. Concretely, I will do the following 2 refactorings:</p>
+
+<ol>
+  <li>Use the native command parsing tool of Python to parse a command.</li>
+  <li>In the highest level, add two methods to handle image resizing and segmentation resizing respectively.</li>
+</ol>
+
+<p>The new code is as following.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">glob</span>
+<span class="kn">import</span> <span class="nn">cv2</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">import</span> <span class="nn">copy</span>
+<span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+
+
+<span class="k">def</span> <span class="nf">resize_images</span><span class="p">(</span><span class="n">input_dir</span><span class="p">,</span> <span class="n">output_dir</span><span class="p">):</span>
+    <span class="n">os</span><span class="p">.</span><span class="n">chdir</span> <span class="p">(</span><span class="n">input_dir</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">files</span> <span class="ow">in</span> <span class="n">glob</span><span class="p">.</span><span class="n">glob</span><span class="p">(</span><span class="s">'*.png'</span><span class="p">):</span>
+        <span class="k">print</span> <span class="p">(</span><span class="n">files</span><span class="p">)</span>
+        <span class="n">img</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">imread</span><span class="p">(</span><span class="n">files</span><span class="p">)</span>
+        <span class="k">print</span> <span class="p">(</span><span class="n">img</span><span class="p">.</span><span class="n">shape</span><span class="p">)</span>
+        <span class="n">norm_img</span> <span class="o">=</span> <span class="n">copy</span><span class="p">.</span><span class="n">deepcopy</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
+
+        <span class="n">blur</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">GaussianBlur</span><span class="p">(</span><span class="n">norm_img</span><span class="p">,</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">),</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="n">Half_size</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">resize</span><span class="p">(</span><span class="n">blur</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span> <span class="n">fx</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">fy</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+        <span class="n">blur2</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">GaussianBlur</span><span class="p">(</span><span class="n">Half_size</span><span class="p">,</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">),</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="n">Quarter_size</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">resize</span><span class="p">(</span><span class="n">blur2</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span> <span class="n">fx</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">fy</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+
+        <span class="n">norm_img</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">normalize</span><span class="p">(</span><span class="n">Quarter_size</span><span class="p">,</span> <span class="n">dst</span><span class="o">=</span><span class="n">norm_img</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">beta</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">norm_type</span><span class="o">=</span><span class="n">cv2</span><span class="p">.</span><span class="n">NORM_MINMAX</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">cv2</span><span class="p">.</span><span class="n">CV_32F</span><span class="p">)</span>
+        <span class="n">norm_img</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">uint8</span><span class="p">(</span><span class="n">norm_img</span><span class="o">*</span><span class="mi">255</span><span class="p">)</span>
+        <span class="n">clahe</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">createCLAHE</span><span class="p">(</span><span class="n">clipLimit</span><span class="o">=</span><span class="mf">3.0</span><span class="p">,</span> <span class="n">tileGridSize</span><span class="o">=</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>
+        <span class="n">cl1</span> <span class="o">=</span> <span class="n">clahe</span><span class="p">.</span><span class="nb">apply</span><span class="p">(</span><span class="n">norm_img</span><span class="p">[:,:,</span><span class="mi">0</span><span class="p">])</span>
+        <span class="n">cl2</span> <span class="o">=</span> <span class="n">clahe</span><span class="p">.</span><span class="nb">apply</span><span class="p">(</span><span class="n">norm_img</span><span class="p">[:,:,</span><span class="mi">1</span><span class="p">])</span>
+        <span class="n">cl3</span> <span class="o">=</span> <span class="n">clahe</span><span class="p">.</span><span class="nb">apply</span><span class="p">(</span><span class="n">norm_img</span><span class="p">[:,:,</span><span class="mi">2</span><span class="p">])</span>
+        <span class="n">cl</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">merge</span><span class="p">((</span><span class="n">cl1</span><span class="p">,</span> <span class="n">cl2</span><span class="p">,</span> <span class="n">cl3</span><span class="p">))</span>
+        <span class="c1">#cv2.imshow('result', cl)
+</span>        <span class="c1">#cv2.imshow('origin', img)
+</span>        <span class="c1">#cv2.waitKey(0)
+</span>        <span class="c1">#print (a)
+</span>        <span class="n">cv2</span><span class="p">.</span><span class="n">imwrite</span><span class="p">(</span><span class="n">output_dir</span><span class="o">+</span><span class="n">files</span><span class="p">,</span> <span class="n">cl</span><span class="p">)</span>
+
+
+
+<span class="k">def</span> <span class="nf">resize_labels</span><span class="p">(</span><span class="n">input_dir</span><span class="p">,</span> <span class="n">output_dir</span><span class="p">):</span>
+    <span class="n">os</span><span class="p">.</span><span class="n">chdir</span> <span class="p">(</span><span class="n">input_dir</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">files</span> <span class="ow">in</span> <span class="n">glob</span><span class="p">.</span><span class="n">glob</span><span class="p">(</span><span class="s">'*.png'</span><span class="p">):</span>
+        <span class="k">print</span> <span class="p">(</span><span class="n">files</span><span class="p">)</span>
+        <span class="n">img</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">imread</span><span class="p">(</span><span class="n">files</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+        <span class="c1">#tmp = copy.deepcopy(img)
+</span>        <span class="k">print</span> <span class="p">(</span><span class="n">img</span><span class="p">.</span><span class="n">shape</span><span class="p">)</span>
+        <span class="n">all_pixel</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">img</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]):</span>
+            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">img</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]):</span>
+                <span class="n">all_pixel</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">img</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">])</span>
+                <span class="c1">#tmp[i,j] = img[i,j]*10
+</span>
+        <span class="n">class_list</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">all_pixel</span><span class="p">))</span>
+        <span class="k">for</span> <span class="n">classNO</span><span class="p">,</span> <span class="n">classPixel</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">class_list</span><span class="p">):</span>
+            <span class="n">tmp</span> <span class="o">=</span> <span class="n">copy</span><span class="p">.</span><span class="n">deepcopy</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">tmp</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]):</span>
+                <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">tmp</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]):</span>
+                    <span class="k">if</span> <span class="n">img</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">]</span> <span class="o">!=</span> <span class="n">classPixel</span><span class="p">:</span>
+                        <span class="n">tmp</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+                    <span class="k">else</span><span class="p">:</span>
+                        <span class="n">tmp</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="mi">255</span>
+
+            <span class="n">blur</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">GaussianBlur</span><span class="p">(</span><span class="n">tmp</span><span class="p">,</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">),</span> <span class="mi">0</span><span class="p">)</span>
+            <span class="n">Half_size</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">resize</span><span class="p">(</span><span class="n">blur</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span> <span class="n">fx</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">fy</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+            <span class="n">blur2</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">GaussianBlur</span><span class="p">(</span><span class="n">Half_size</span><span class="p">,</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">),</span> <span class="mi">0</span><span class="p">)</span>
+            <span class="n">Quarter_size</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">resize</span><span class="p">(</span><span class="n">blur2</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span> <span class="n">fx</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">fy</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+
+            <span class="n">norm_img</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">normalize</span><span class="p">(</span><span class="n">Quarter_size</span><span class="p">,</span> <span class="n">dst</span><span class="o">=</span><span class="n">tmp</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">beta</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">norm_type</span><span class="o">=</span><span class="n">cv2</span><span class="p">.</span><span class="n">NORM_MINMAX</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">cv2</span><span class="p">.</span><span class="n">CV_32F</span><span class="p">)</span>
+            <span class="n">norm_img</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">uint8</span><span class="p">(</span><span class="n">norm_img</span><span class="o">*</span><span class="mi">255</span><span class="p">)</span>
+            <span class="n">clahe</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">createCLAHE</span><span class="p">(</span><span class="n">clipLimit</span><span class="o">=</span><span class="mf">3.0</span><span class="p">,</span> <span class="n">tileGridSize</span><span class="o">=</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>
+            <span class="n">cl1</span> <span class="o">=</span> <span class="n">clahe</span><span class="p">.</span><span class="nb">apply</span><span class="p">(</span><span class="n">norm_img</span><span class="p">)</span>
+            <span class="n">cl1</span> <span class="o">=</span> <span class="n">cl1</span><span class="p">.</span><span class="n">reshape</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span> <span class="n">cl1</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">cl1</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
+            <span class="k">if</span> <span class="n">classNO</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="n">stack_img</span> <span class="o">=</span> <span class="n">cl1</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">stack_img</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">concatenate</span><span class="p">((</span><span class="n">stack_img</span><span class="p">,</span> <span class="n">cl1</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+
+        <span class="c1"># go back to grey image
+</span>        <span class="n">final_img</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">stack_img</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">stack_img</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">2</span><span class="p">]),</span><span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="p">.</span><span class="nb">int</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">i_s</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">stack_img</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]):</span>
+            <span class="k">for</span> <span class="n">j_s</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">stack_img</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">2</span><span class="p">]):</span>
+                <span class="n">tmp_array</span> <span class="o">=</span> <span class="n">stack_img</span><span class="p">[:,</span><span class="n">i_s</span><span class="p">,</span><span class="n">j_s</span><span class="p">]</span>
+                <span class="n">max_index</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">tmp_array</span><span class="p">)</span>
+                <span class="n">final_img</span><span class="p">[</span><span class="n">i_s</span><span class="p">,</span> <span class="n">j_s</span><span class="p">]</span> <span class="o">=</span> <span class="n">class_list</span><span class="p">[</span><span class="n">max_index</span><span class="p">]</span>
+                <span class="c1">#print tmp_array
+</span>        <span class="c1">#cv2.imshow('result', final_img)
+</span>        <span class="c1">#cv2.waitKey(0)
+</span>        <span class="c1">#cv2.imwrite('final.png', final_img)
+</span>        <span class="c1">#print (a)
+</span>        <span class="n">cv2</span><span class="p">.</span><span class="n">imwrite</span><span class="p">(</span><span class="n">output_dir</span><span class="o">+</span><span class="n">files</span><span class="p">,</span> <span class="n">final_img</span><span class="p">)</span>
+
+
+
+<span class="n">FLAGS</span> <span class="o">=</span> <span class="bp">None</span>
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">'__main__'</span><span class="p">:</span>
+    <span class="n">parser</span> <span class="o">=</span> <span class="n">argparse</span><span class="p">.</span><span class="n">ArgumentParser</span><span class="p">()</span>
+    <span class="n">parser</span><span class="p">.</span><span class="n">add_argument</span><span class="p">(</span>
+        <span class="s">'--type'</span><span class="p">,</span>
+        <span class="nb">type</span><span class="o">=</span><span class="nb">str</span><span class="p">,</span>
+        <span class="n">default</span><span class="o">=</span><span class="s">'images'</span><span class="p">,</span>
+        <span class="n">help</span><span class="o">=</span><span class="s">"Types: 'images' or 'labels'."</span>
+    <span class="p">)</span>
+    <span class="n">parser</span><span class="p">.</span><span class="n">add_argument</span><span class="p">(</span>
+        <span class="s">'--data_dir'</span><span class="p">,</span>
+        <span class="nb">type</span><span class="o">=</span><span class="nb">str</span><span class="p">,</span>
+        <span class="n">default</span><span class="o">=</span><span class="s">'/tmp/data'</span><span class="p">,</span>
+        <span class="n">help</span><span class="o">=</span><span class="s">'Directory of the data.'</span>
+    <span class="p">)</span>
+    <span class="n">parser</span><span class="p">.</span><span class="n">add_argument</span><span class="p">(</span>
+        <span class="s">'--output_dir'</span><span class="p">,</span>
+        <span class="nb">type</span><span class="o">=</span><span class="nb">str</span><span class="p">,</span>
+        <span class="n">default</span><span class="o">=</span><span class="s">'/tmp/data'</span><span class="p">,</span>
+        <span class="n">help</span><span class="o">=</span><span class="s">'Output dir.'</span>
+    <span class="p">)</span>
+
+    <span class="n">FLAGS</span><span class="p">,</span> <span class="n">unparsed</span> <span class="o">=</span> <span class="n">parser</span><span class="p">.</span><span class="n">parse_known_args</span><span class="p">()</span>
+    
+    <span class="n">input_dir</span> <span class="o">=</span> <span class="n">FLAGS</span><span class="p">.</span><span class="n">data_dir</span>
+    <span class="n">output_dir</span> <span class="o">=</span> <span class="n">FLAGS</span><span class="p">.</span><span class="n">output_dir</span>
+    
+    <span class="k">if</span> <span class="n">FLAGS</span><span class="p">.</span><span class="nb">type</span> <span class="o">==</span> <span class="s">'images'</span><span class="p">:</span>
+        <span class="n">resize_images</span><span class="p">(</span><span class="n">input_dir</span><span class="p">,</span> <span class="n">output_dir</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">resize_labels</span><span class="p">(</span><span class="n">input_dir</span><span class="p">,</span> <span class="n">output_dir</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+<p>Looks a little bit better, right? Let’s move on!</p>
+
+<h4 id="easy-to-read">Easy to read</h4>
+
+<p>If you want to be a professional programmer, you must bear in your mind that your code is to read by other people. And this other people might be yourself. The following refactors could be made to current code to improve its readability:</p>
+
+<ol>
+  <li>Naming. Use names with clear meaning and avoid vague names such as ‘blur’, ‘norm_img’.</li>
+  <li>Consistent code style, including capitalization, whitespaces, indentation.</li>
+</ol>
+
+<h3 id="easy-to-modifyupdate">Easy to modify/update</h3>
+
+<p>As a programmer, you will face legacy code oneday. To make coding based on legacy code easily, you must enhance the modifiability of your code. Remember the bad smell in code (credit belonging to Martin Fowler and Robert Martin):</p>
+
+<ul>
+  <li>Duplicate code (most notorious one, add a code for it instantly)</li>
+  <li>Long methods (what are you talking about with so long a sentence)</li>
+  <li>Needless complexity</li>
+</ul>
+
+<p>After the two improvements, the final code snippet is rolled out.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">argparse</span>
+<span class="kn">import</span> <span class="nn">glob</span>
+<span class="kn">import</span> <span class="nn">cv2</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+
+<span class="k">def</span> <span class="nf">resize_img</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">scale</span><span class="p">):</span>
+    <span class="n">blurred_img</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">GaussianBlur</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="n">resized_img</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">resize</span><span class="p">(</span><span class="n">blurred_img</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">fx</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">fy</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+        
+    <span class="k">if</span> <span class="n">scale</span> <span class="o">==</span> <span class="mf">0.25</span><span class="p">:</span>
+        <span class="n">blurred_img</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">GaussianBlur</span><span class="p">(</span><span class="n">resized_img</span><span class="p">,</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="n">resized_img</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">resize</span><span class="p">(</span><span class="n">blurred_img</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">fx</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">fy</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+
+    <span class="n">normalized_img</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">normalize</span><span class="p">(</span><span class="n">resized_img</span><span class="p">,</span> <span class="n">dst</span><span class="o">=</span><span class="n">resized_img</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">beta</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">norm_type</span><span class="o">=</span><span class="n">cv2</span><span class="p">.</span><span class="n">NORM_MINMAX</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">cv2</span><span class="p">.</span><span class="n">CV_32F</span><span class="p">)</span>
+    <span class="n">result_img</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">uint8</span><span class="p">(</span><span class="n">normalized_img</span> <span class="o">*</span> <span class="mi">255</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="n">result_img</span>
+
+
+<span class="k">def</span> <span class="nf">resize_images</span><span class="p">(</span><span class="n">input_dir</span><span class="p">,</span> <span class="n">output_dir</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">apply_clahe</span><span class="o">=</span><span class="bp">False</span><span class="p">):</span>
+    <span class="n">os</span><span class="p">.</span><span class="n">chdir</span><span class="p">(</span><span class="n">input_dir</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">img_file</span> <span class="ow">in</span> <span class="n">glob</span><span class="p">.</span><span class="n">glob</span><span class="p">(</span><span class="s">'*.png'</span><span class="p">):</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">img_file</span><span class="p">)</span>
+        <span class="n">img</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">imread</span><span class="p">(</span><span class="n">img_file</span><span class="p">)</span>
+        <span class="c1">#print (img.shape)
+</span>        
+        <span class="n">result_img</span> <span class="o">=</span> <span class="n">resize_img</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">scale</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">apply_clahe</span><span class="p">:</span>
+            <span class="n">clahe</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">createCLAHE</span><span class="p">(</span><span class="n">clipLimit</span><span class="o">=</span><span class="mf">3.0</span><span class="p">,</span> <span class="n">tileGridSize</span><span class="o">=</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+            <span class="n">result_img</span> <span class="o">=</span> <span class="n">clahe</span><span class="p">.</span><span class="nb">apply</span><span class="p">(</span><span class="n">result_img</span><span class="p">)</span>
+
+        <span class="n">cv2</span><span class="p">.</span><span class="n">imwrite</span><span class="p">(</span><span class="n">output_dir</span> <span class="o">+</span> <span class="s">'/'</span> <span class="o">+</span> <span class="n">img_file</span><span class="p">,</span> <span class="n">result_img</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">resize_labels</span><span class="p">(</span><span class="n">input_dir</span><span class="p">,</span> <span class="n">output_dir</span><span class="p">,</span> <span class="n">class_count</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">apply_clahe</span><span class="o">=</span><span class="bp">False</span><span class="p">):</span>
+    <span class="n">os</span><span class="p">.</span><span class="n">chdir</span><span class="p">(</span><span class="n">input_dir</span><span class="p">)</span>    
+
+    <span class="k">for</span> <span class="n">label_file</span> <span class="ow">in</span> <span class="n">glob</span><span class="p">.</span><span class="n">glob</span><span class="p">(</span><span class="s">'*.png'</span><span class="p">):</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">label_file</span><span class="p">)</span>
+        <span class="n">label_img</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">imread</span><span class="p">(</span><span class="n">label_file</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="n">label_img_height</span> <span class="o">=</span> <span class="n">label_img</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">label_img_width</span> <span class="o">=</span> <span class="n">label_img</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+        <span class="n">label_pixel_list</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">label_img</span><span class="p">,</span> <span class="p">(</span><span class="n">label_img_height</span> <span class="o">*</span> <span class="n">label_img_width</span><span class="p">))</span>
+
+        <span class="n">resized_img_height</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">label_img_height</span> <span class="o">*</span> <span class="n">scale</span><span class="p">))</span>
+        <span class="n">resized_img_width</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">label_img_width</span> <span class="o">*</span> <span class="n">scale</span><span class="p">))</span>
+        <span class="n">stacked_class_img</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">array</span><span class="p">([]).</span><span class="n">reshape</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="n">resized_img_height</span><span class="p">,</span> <span class="n">resized_img_width</span><span class="p">))</span>
+
+        <span class="k">for</span> <span class="n">class_value</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">class_count</span><span class="p">):</span>
+            <span class="k">print</span><span class="p">(</span><span class="s">'class value:'</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">class_value</span><span class="p">))</span>
+            <span class="n">class_label_list</span> <span class="o">=</span> <span class="p">[(</span><span class="mf">0.0</span> <span class="k">if</span> <span class="n">label_pixel_list</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">!=</span> <span class="n">class_value</span> <span class="k">else</span> <span class="mf">255.0</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">label</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">label_pixel_list</span><span class="p">)]</span>
+            <span class="n">class_label_img</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">class_label_list</span><span class="p">,</span> <span class="p">(</span><span class="n">label_img</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">label_img</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
+            <span class="c1">#print(class_label_img)
+</span>
+            <span class="n">resized_class_img</span> <span class="o">=</span> <span class="n">resize_img</span><span class="p">(</span><span class="n">class_label_img</span><span class="p">,</span> <span class="n">scale</span><span class="p">)</span>
+
+            <span class="k">if</span> <span class="n">apply_clahe</span><span class="p">:</span>
+                <span class="n">clahe</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">createCLAHE</span><span class="p">(</span><span class="n">clipLimit</span><span class="o">=</span><span class="mf">3.0</span><span class="p">,</span> <span class="n">tileGridSize</span><span class="o">=</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+                <span class="n">resized_class_img</span> <span class="o">=</span> <span class="n">clahe</span><span class="p">.</span><span class="nb">apply</span><span class="p">(</span><span class="n">resized_class_img</span><span class="p">)</span>
+
+            <span class="n">resized_class_img</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">resized_class_img</span><span class="p">,</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">resized_class_img</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">resized_class_img</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
+            <span class="n">stacked_class_img</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">vstack</span><span class="p">((</span><span class="n">stacked_class_img</span><span class="p">,</span> <span class="n">resized_class_img</span><span class="p">))</span>
+
+        <span class="n">result_img</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">stacked_class_img</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+        <span class="n">cv2</span><span class="p">.</span><span class="n">imwrite</span><span class="p">(</span><span class="n">output_dir</span> <span class="o">+</span> <span class="s">'/'</span> <span class="o">+</span> <span class="n">label_file</span><span class="p">,</span> <span class="n">result_img</span><span class="p">)</span>
+
+
+<span class="n">FLAGS</span> <span class="o">=</span> <span class="bp">None</span>
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">'__main__'</span><span class="p">:</span>
+    <span class="n">parser</span> <span class="o">=</span> <span class="n">argparse</span><span class="p">.</span><span class="n">ArgumentParser</span><span class="p">()</span>
+    <span class="n">parser</span><span class="p">.</span><span class="n">add_argument</span><span class="p">(</span>
+        <span class="s">'--type'</span><span class="p">,</span>
+        <span class="nb">type</span><span class="o">=</span><span class="nb">str</span><span class="p">,</span>
+        <span class="n">default</span><span class="o">=</span><span class="s">'images'</span><span class="p">,</span>
+        <span class="n">help</span><span class="o">=</span><span class="s">"Types: 'images' or 'labels'."</span>
+    <span class="p">)</span>
+    <span class="n">parser</span><span class="p">.</span><span class="n">add_argument</span><span class="p">(</span>
+        <span class="s">'--scale'</span><span class="p">,</span>
+        <span class="nb">type</span><span class="o">=</span><span class="nb">float</span><span class="p">,</span>
+        <span class="n">default</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span>
+        <span class="n">help</span><span class="o">=</span><span class="s">'Scale of the resizing.'</span>
+    <span class="p">)</span>
+    <span class="n">parser</span><span class="p">.</span><span class="n">add_argument</span><span class="p">(</span>
+        <span class="s">'--class_count'</span><span class="p">,</span>
+        <span class="nb">type</span><span class="o">=</span><span class="nb">int</span><span class="p">,</span>
+        <span class="n">default</span><span class="o">=</span><span class="mi">32</span><span class="p">,</span>
+        <span class="n">help</span><span class="o">=</span><span class="s">'Total class count.'</span>
+    <span class="p">)</span>
+    <span class="n">parser</span><span class="p">.</span><span class="n">add_argument</span><span class="p">(</span>
+        <span class="s">'--improve_contrast'</span><span class="p">,</span>
+        <span class="nb">type</span><span class="o">=</span><span class="nb">bool</span><span class="p">,</span>
+        <span class="n">default</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span>
+        <span class="n">help</span><span class="o">=</span><span class="s">'Whether to improve contrast.'</span>
+    <span class="p">)</span>
+    <span class="n">parser</span><span class="p">.</span><span class="n">add_argument</span><span class="p">(</span>
+        <span class="s">'--data_dir'</span><span class="p">,</span>
+        <span class="nb">type</span><span class="o">=</span><span class="nb">str</span><span class="p">,</span>
+        <span class="n">default</span><span class="o">=</span><span class="s">'/tmp/data'</span><span class="p">,</span>
+        <span class="n">help</span><span class="o">=</span><span class="s">'Directory of the data.'</span>
+    <span class="p">)</span>
+    <span class="n">parser</span><span class="p">.</span><span class="n">add_argument</span><span class="p">(</span>
+        <span class="s">'--output_dir'</span><span class="p">,</span>
+        <span class="nb">type</span><span class="o">=</span><span class="nb">str</span><span class="p">,</span>
+        <span class="n">default</span><span class="o">=</span><span class="s">'/tmp/data'</span><span class="p">,</span>
+        <span class="n">help</span><span class="o">=</span><span class="s">'Output dir.'</span>
+    <span class="p">)</span>
+
+    <span class="n">FLAGS</span><span class="p">,</span> <span class="n">unparsed</span> <span class="o">=</span> <span class="n">parser</span><span class="p">.</span><span class="n">parse_known_args</span><span class="p">()</span>
+    
+    <span class="n">input_dir</span> <span class="o">=</span> <span class="n">FLAGS</span><span class="p">.</span><span class="n">data_dir</span>
+    <span class="n">output_dir</span> <span class="o">=</span> <span class="n">FLAGS</span><span class="p">.</span><span class="n">output_dir</span>
+    <span class="n">scale</span> <span class="o">=</span> <span class="n">FLAGS</span><span class="p">.</span><span class="n">scale</span>
+    <span class="n">improve_contrast</span> <span class="o">=</span> <span class="n">FLAGS</span><span class="p">.</span><span class="n">improve_contrast</span>
+
+    <span class="k">if</span> <span class="n">FLAGS</span><span class="p">.</span><span class="nb">type</span> <span class="o">==</span> <span class="s">'images'</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"Starting resizing images..."</span><span class="p">)</span>
+        <span class="n">resize_images</span><span class="p">(</span><span class="n">input_dir</span><span class="p">,</span> <span class="n">output_dir</span><span class="p">,</span> <span class="n">scale</span><span class="p">,</span> <span class="n">improve_contrast</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">resize_labels</span><span class="p">(</span><span class="n">input_dir</span><span class="p">,</span> <span class="n">output_dir</span><span class="p">,</span> <span class="n">FLAGS</span><span class="p">.</span><span class="n">class_count</span><span class="p">,</span> <span class="n">scale</span><span class="p">,</span> <span class="n">improve_contrast</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+
+
+<span class="post-date">
+  Written on
+  
+  November
+  14th,
+  2017
+  by
+  
+    Tao Sun
+  
+</span>
+
+<div class="post-date">Feel free to share!</div>
+  <div class="sharing-icons">
+    <a href="https://twitter.com/intent/tweet?text=Write Code Professionally&amp;url=/code-professionally.html" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=/code-professionally.html&amp;title=Write Code Professionally" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+  </div>
+</div>
+
+
+<div class="related">
+  <h1 >You may also enjoy:</h1>
+  
+  <ul class="related-posts">
+    
+  </ul>
+</div>
+
+
+
+
+    </div>
+
+    <footer class="footer">
+  
+  
+  
+    <a href="https://www.github.com/tao-sun" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="http://www.linkedin.com/in/sunxcint/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="mailto:sunxcint@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+  
+
+  
+  
+    <a href="/feed.xml"><i class="fa fa-rss-square" aria-hidden="true"></i></a>
+  
+
+  <div class="post-date">Build by Jekyll with theme of Larange</div>
+</footer>
+
+  </div>
+
+</body>
+</html>

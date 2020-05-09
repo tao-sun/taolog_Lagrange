@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<channel>
+		<title>Tao's</title>
+		<description>a minimalist Jekyll theme</description>
+		<link></link>
+		<atom:link href="/rss-feed.xml" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>一个人战斗的Trump ——写在美国中期选举前夜</title>
+				
+					<dc:creator>Tao Sun</dc:creator>
+				
+				
+					<description>&lt;p&gt;这是来美之后经历的第二次大型选举了。对这次号称Trump信任投票的中期选举，虽然仍然没有投票权，但不会像上次大选那样选边站了，因此也少了类似上次的大选前的期待，更多的是一种冷静的观察和一丝丝的担忧。因为对于一个要用来福枪去对付小石子的总统，我已无话可说，同时对于一个要把美国拉向民主社会主义方向或者玩族群政治的左派，我同样也无法苟同。&lt;/p&gt;
+</description>
+				
+				<pubDate>Sat, 03 Nov 2018 00:00:00 -0400</pubDate>
+				<link>http://localhost:4000/politics/mid-election.html</link>
+				<guid isPermaLink="true">http://localhost:4000/politics/mid-election.html</guid>
+			</item>
+		
+			<item>
+				<title>Write Code Professionally</title>
+				
+				
+					<description>“A simple tutorial in understanding Matrix capsules with EM Routing in Capsule Networks”</description>
+				
+				<pubDate>Tue, 14 Nov 2017 06:00:00 -0500</pubDate>
+				<link>http://localhost:4000/code-professionally.html</link>
+				<guid isPermaLink="true">http://localhost:4000/code-professionally.html</guid>
+			</item>
+		
+	</channel>
+</rss>
