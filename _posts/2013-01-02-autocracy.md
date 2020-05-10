@@ -4,7 +4,7 @@ title: "中国的维权统治理想"
 author: "Tao Sun"
 categories: Politics
 tags: []
-image: trump_alone.jpg
+image: 
 ---
 
 威权法治模式在新加坡的成功燃起了很多学者的中国威权法治理想。威权法治在中国是否能行通是一个值得认真思考得问题。
