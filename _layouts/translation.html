@@ -2,4 +2,34 @@
 layout: default
 ---
 
-<iframe src='{{ site.url }}/{{site.data.settings.translation-proj.name}}/{{site.data.settings.translation-proj.contents_path}}/{{page.file}}'></iframe>
+<h1>
+  {{ page.title }}
+</h1>
+<!--iframe height="200" width="300" src='{{ site.url }}/{{site.data.settings.translation-proj.name}}/{{site.data.settings.translation-proj.contents_path}}/{{page.file}}'></iframe-->
+<iframe height="1000" width="500" src='https://tao-sun.github.io/ColdWar/contents/ch1.html'></iframe>
+
+<span class="post-date">
+  {{ site.data.settings.post_date_prefix }}
+  {% assign d = page.date | date: "%-d"  %}
+  {{ page.date | date: "%B" }}
+  {% case d %}
+    {% when '1' or '21' or '31' %}{{ d }}st
+    {% when '2' or '22' %}{{ d }}nd
+    {% when '3' or '23' %}{{ d }}rd
+    {% else %}{{ d }}th{% endcase %},
+  {{ page.date | date: "%Y" }}
+  by
+  {% if page.author %}
+    {{ page.author }}
+  {% else %}
+    {{ site.author }}
+  {% endif %}
+</span>
+
+{% include social-sharing.html %}
+
+{% include related-posts.html %}
+
+{% if site.data.settings.disqus.comments %}
+  {% include disqus.html %}
+{% endif %}
