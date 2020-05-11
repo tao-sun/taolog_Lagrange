@@ -3,7 +3,7 @@
     {% for item in site.data.settings.menu %}
       <a href="{{ site.github.url }}/{{ item.path }}/{{ item.url }}">{{ item.name }}</a>
     {% endfor %}
-       <a href="{{ site.url }}/{{site.data.settings.translation-proj}}">Translation (冷战)</a>
+       <a href="{{ site.url }}/{{site.data.settings.translation-proj.name}}">Translation (冷战)</a>
   </nav>
   <nav class="social-icons">
     {% include social-icons.html %}
