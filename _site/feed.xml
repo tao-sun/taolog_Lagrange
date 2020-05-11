@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-05-08T22:07:47-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Tao’s</title><subtitle>a minimalist Jekyll theme</subtitle><author><name>Tao Sun</name></author><entry><title type="html">一个人战斗的Trump ——写在美国中期选举前夜</title><link href="http://localhost:4000/politics/mid-election.html" rel="alternate" type="text/html" title="一个人战斗的Trump ——写在美国中期选举前夜" /><published>2018-11-03T00:00:00-04:00</published><updated>2018-11-03T00:00:00-04:00</updated><id>http://localhost:4000/politics/mid-election</id><content type="html" xml:base="http://localhost:4000/politics/mid-election.html">&lt;p&gt;这是来美之后经历的第二次大型选举了。对这次号称Trump信任投票的中期选举，虽然仍然没有投票权，但不会像上次大选那样选边站了，因此也少了类似上次的大选前的期待，更多的是一种冷静的观察和一丝丝的担忧。因为对于一个要用来福枪去对付小石子的总统，我已无话可说，同时对于一个要把美国拉向民主社会主义方向或者玩族群政治的左派，我同样也无法苟同。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-05-11T15:50:07-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Tao’s</title><subtitle>a minimalist Jekyll theme</subtitle><author><name>Tao Sun</name></author><entry><title type="html">一个人战斗的Trump ——写在美国中期选举前夜</title><link href="http://localhost:4000/politics/mid-election.html" rel="alternate" type="text/html" title="一个人战斗的Trump ——写在美国中期选举前夜" /><published>2018-11-03T00:00:00-04:00</published><updated>2018-11-03T00:00:00-04:00</updated><id>http://localhost:4000/politics/mid-election</id><content type="html" xml:base="http://localhost:4000/politics/mid-election.html">&lt;p&gt;这是来美之后经历的第二次大型选举了。对这次号称Trump信任投票的中期选举，虽然仍然没有投票权，但不会像上次大选那样选边站了，因此也少了类似上次的大选前的期待，更多的是一种冷静的观察和一丝丝的担忧。因为对于一个要用来福枪去对付小石子的总统，我已无话可说，同时对于一个要把美国拉向民主社会主义方向或者玩族群政治的左派，我同样也无法苟同。&lt;/p&gt;
 
 &lt;p&gt;确实，目前我们这个仍然在学校的群体的处境根本没有乐观可言。一个人敢公开说这个群体全部都是间谍，更可怕的是这个人被极端的白人至上主义者环绕左右，给人的感觉是签证明天就可能被取消，然后的命运的就是被驱离出境。大学里头虽以左派为主，但是迫于现实的压力，也有一部分在有意无意地在为这个群体制造麻烦。&lt;/p&gt;
 
@@ -11,7 +11,7 @@
 
 &lt;p&gt;而超级富翁Trump，一个喜欢被万人围绕感觉的政客，一个假扮基督徒蒙蔽宗教人士的撒旦，似乎在被一股合力所包围，一个人在战斗。左右两派似乎都在反省，在联手check他的暴政。对下一步，我只能说God bless America!&lt;/p&gt;
 
-&lt;p&gt;05/05/20 后记：看来我错了，被中期选举前的假象迷惑了，Trump并不孤单。McCain还没走之前，Lindsey Graham早已倒台，背后还有McConnell这个老狐狸。Sander初选没有16年走得远，Biden胜后Warren也顺势导向了他。疫情持续燃烧，Trump在一个多月失败的新闻吹风后又开始蠢蠢欲动，试图重开他已经持续超过四年没完没了的竞选集会。&lt;/p&gt;</content><author><name>Tao Sun</name></author><category term="documentation" /><category term="sample" /><summary type="html">这是来美之后经历的第二次大型选举了。对这次号称Trump信任投票的中期选举，虽然仍然没有投票权，但不会像上次大选那样选边站了，因此也少了类似上次的大选前的期待，更多的是一种冷静的观察和一丝丝的担忧。因为对于一个要用来福枪去对付小石子的总统，我已无话可说，同时对于一个要把美国拉向民主社会主义方向或者玩族群政治的左派，我同样也无法苟同。</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/trump_alone.jpg" /><media:content medium="image" url="http://localhost:4000/trump_alone.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Write Code Professionally</title><link href="http://localhost:4000/code-professionally.html" rel="alternate" type="text/html" title="Write Code Professionally" /><published>2017-11-14T06:00:00-05:00</published><updated>2017-11-14T06:00:00-05:00</updated><id>http://localhost:4000/code-professionally</id><content type="html" xml:base="http://localhost:4000/code-professionally.html">&lt;p&gt;As a student in CS, you may often ask yourself what is good code and what is bad code. In this post, I will take as an example a code snippet written by a Phd student to briefly discuss the issue.&lt;/p&gt;
+&lt;p&gt;05/05/20 后记：看来我错了，被中期选举前的假象迷惑了，Trump并不孤单。McCain还没走之前，Lindsey Graham早已倒台，背后还有McConnell这个老狐狸。Sander初选没有16年走得远，Biden胜后Warren也顺势导向了他。疫情持续燃烧，Trump在一个多月失败的新闻吹风后又开始蠢蠢欲动，试图重开他已经持续超过四年没完没了的竞选集会。&lt;/p&gt;</content><author><name>Tao Sun</name></author><summary type="html">这是来美之后经历的第二次大型选举了。对这次号称Trump信任投票的中期选举，虽然仍然没有投票权，但不会像上次大选那样选边站了，因此也少了类似上次的大选前的期待，更多的是一种冷静的观察和一丝丝的担忧。因为对于一个要用来福枪去对付小石子的总统，我已无话可说，同时对于一个要把美国拉向民主社会主义方向或者玩族群政治的左派，我同样也无法苟同。</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/trump_alone.jpg" /><media:content medium="image" url="http://localhost:4000/trump_alone.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Write Code Professionally</title><link href="http://localhost:4000/code_professionally.html" rel="alternate" type="text/html" title="Write Code Professionally" /><published>2017-11-14T06:00:00-05:00</published><updated>2017-11-14T06:00:00-05:00</updated><id>http://localhost:4000/code_professionally</id><content type="html" xml:base="http://localhost:4000/code_professionally.html">&lt;p&gt;As a student in CS, you may often ask yourself what is good code and what is bad code. In this post, I will take as an example a code snippet written by a Phd student to briefly discuss the issue.&lt;/p&gt;
 
 &lt;p&gt;Functionality of snippet is pretty simple, that is resizing images or image segmentation in a specified directory and output the results into another specified directory.
 中文&lt;/p&gt;
@@ -408,4 +408,76 @@ for files in glob.glob('*.png'):
     &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
         &lt;span class=&quot;n&quot;&gt;resize_labels&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;input_dir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;output_dir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;FLAGS&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;class_count&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;scale&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;improve_contrast&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Tao Sun</name></author><summary type="html">“A simple tutorial in understanding Matrix capsules with EM Routing in Capsule Networks”</summary></entry></feed>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Tao Sun</name></author><summary type="html">“A simple tutorial in understanding Matrix capsules with EM Routing in Capsule Networks”</summary></entry><entry><title type="html">中学为体西学为用之批判</title><link href="http://localhost:4000/philosophy/eastwest.html" rel="alternate" type="text/html" title="中学为体西学为用之批判" /><published>2017-06-13T00:00:00-04:00</published><updated>2017-06-13T00:00:00-04:00</updated><id>http://localhost:4000/philosophy/eastwest</id><content type="html" xml:base="http://localhost:4000/philosophy/eastwest.html">&lt;p&gt;前些天在微信圈里发了一个有关“中学为体，西学为用”的moment，赶上一个有关小孩教育的系列中文讲座正在小Town如火如荼地进行着。我趁机把这个这个话题抛给了他们，然后就带着家人躲去加州了。回来一问，这个话题居然引起了讲座听众激烈的讨论甚至争辩，在我意料之中又出乎我意料之外。既然是由我而起，我想我有义务阐述一下自己对这个问题的看法。&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;“中学为体，西学为用”对现在中国人（至少中国大陆的大部分人）来说是一个伪命题。“中学为体，西学为用”在Wikipedia的介绍说是冯桂芬提出来，据我的知识来源，它跟张之洞有很大关系，当然这个不是重点。总之，这句话是在清末中兴时期由洋务派提出来的一个意识形态方面的主张。在那个时代，科举虽然已趋末路但仍在继续，“中学”指的就是当时的读书人所读儒家之书。时间回到当下，我们这些有知识有文化的新一代家长心中还有“中学”吗？经过民国初年五四运动的涤荡以及我们伟大的共产党在解放后这么多年的“再教育”，已无法知道我们到底学了多少“中学”，然后又对“中学”有多少的了解。家长心中已无“中学”而言，何谈在子女教育中贯彻“中学为体”的原则，简直无稽之谈！多说一句，从上研究生开始到在毕业入社会以后的最初几年中，由于在学习和工作中的中西思想的碰撞，有一个问题一直在我脑边萦绕：到底我们所学的“科学”是否是真科学——以科学方法论去学习和实践而得的一种学问，还是应试教育加上那个以工农为主体党强加在我们身上的“伪科学”。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;就“中学为体，西学为用”这个思想本身来说，它至少为清王朝覆灭的贡献不小。清朝正是在为这类问题争论不休，为下一步的宪政改革举棋不定之际被推翻的。而同期的日本的明治维新的成功，在意识形态上毫不含糊地走西化路线是起了不小的作用的。就我所读而言，在当今知识分子圈里大部分人明里暗里对这个思想是批判的。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;在目前的语境下谈“中学为体，西学为用”， 有关国学复兴这个话题是绕不开的。国内各大小城市，各个层次的国学班层出不穷。首先，我是极力反对所谓国学班的，就是在国内我也不会把孩子送去学所谓“国学”，更不要提什么礼仪班、道德班之类。因为我一直没有想通，我们为什么现在调过头去学我们已经批判了近一百年的那些东西。现代国学已经真的对老朱家的那点东西“取其精华，弃其糟粕”了，我打一个大大的问号。即使当真“取其精华，弃其糟粕”了，我还是举双手反对。现在的社会是一个以科学和民主（绕不开的德先生和赛先生）为基础的社会，而在李约瑟难题（i.e. 尽管中国古代对人类科技发展做出了很多重要贡献，但为什么科学和工业没有在近代的中国发生？）仍然无解的前提下，复兴国学就是开历史倒车！另外，就自己的经验来谈谈。我曾在美资企业工作了十年，来美之前在SAS北京研发中心做Team Lead。在这十年中，中美文化碰撞基本是日常议题。我的体会是，如果你在美国企业文化下带着儒家的中庸思想混，是非常痛苦而且是行不通的。举两个例子，我体验的美国企业中是很讲究proactive的，proactive一方面要求你干事情要主动，另一方面你得能提出你的观点，按照中庸的思想含而不露，把自己的想法藏着掖着是不会被appreciated的。说白了，就是你得学会critical thinking 这个儒家并未提倡的东西。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</content><author><name>Tao Sun</name></author><summary type="html">前些天在微信圈里发了一个有关“中学为体，西学为用”的moment，赶上一个有关小孩教育的系列中文讲座正在小Town如火如荼地进行着。我趁机把这个这个话题抛给了他们，然后就带着家人躲去加州了。回来一问，这个话题居然引起了讲座听众激烈的讨论甚至争辩，在我意料之中又出乎我意料之外。既然是由我而起，我想我有义务阐述一下自己对这个问题的看法。</summary></entry><entry><title type="html">Cold War (Chapter 1 part 1)</title><link href="http://localhost:4000/history/coldwar_ch1_part1.html" rel="alternate" type="text/html" title="Cold War (Chapter 1 part 1)" /><published>2013-02-16T00:00:00-05:00</published><updated>2013-02-16T00:00:00-05:00</updated><id>http://localhost:4000/history/coldwar_ch1_part1</id><content type="html" xml:base="http://localhost:4000/history/coldwar_ch1_part1.html">&lt;h2 id=&quot;第一章--重回恐怖&quot;&gt;第一章  重回恐怖&lt;/h2&gt;
+
+&lt;p&gt;欢笑、握手、舞蹈、觥筹交错、憧憬未来，战后此种欢庆场面随处可见。1945年4月25日，两只军队从两个相反方向攻入易北河流经的东德城市Torgau，实现了首次胜利会师，纳粹德国就此一分为二。五天之后，Adolf Hitler 一枪将自己的脑浆迸射到满是瓦砾的柏林城下。一周以后， 德国宣布无条件投降。而获胜的盟军统帅富兰克林 罗斯福、Winston 丘吉尔、Josef 斯大林早将把酒言欢和筹划未来的时刻提前到了1943年11月的德黑兰会议和1945年2月的雅尔塔会议。倘若他们统帅的军队在其真正用武之地的前线战场上未能狂奔着庆祝胜利的话，这一切真是毫无意义。&lt;/p&gt;
+
+&lt;p&gt;然而为什么两只军队的相会如此地充满戒备，象对待来自外星得访客一般？为什么他们见到对方和自己如出一辙，会如此的惊讶但马上又感到宽慰？尽管如此，他们各自的司令官还是坚持要分开受降，西线仪式安排在法兰西的Reims，于五月七号举行，东线的于五月八号在柏林举行，这又如何解释呢？为什么苏维埃当局试图瓦解莫斯科在正式宣布德国有条件投降后自发进行的反美示威呢？为什么美国在一周以后突然叫停了根据租借法案向苏联运送重要物资？为什么罗斯福的的重要助手，在1941年一手促成盟军组建的Harry Hopkins，在罗斯福死后六周匆忙赶到莫斯科试图阻止盟国的崩溃？为此，几年后丘吉尔将回忆录命名为《胜利与悲剧》，这是为什么呢？&lt;/p&gt;
+
+&lt;p&gt;这一切的答案只有一个：另外一场战争——一场非军事的意识形态和地缘政治之争——已经在获胜盟国的主要成员间上演。尽管盟军在1945年的春天胜利了，它的成功只是有赖于水火不容的两个体系间对共存目标的追求。悲剧就在于胜利要求胜利者们要么停止做以前的自己，要么放弃很多只要打赢战争才能实现的愿景。&lt;/p&gt;</content><author><name>Tao Sun</name></author><summary type="html">第一章 重回恐怖</summary></entry><entry><title type="html">Cold War (Chapter 1 part 2)</title><link href="http://localhost:4000/history/coldwar_ch1_part2.html" rel="alternate" type="text/html" title="Cold War (Chapter 1 part 2)" /><published>2013-02-16T00:00:00-05:00</published><updated>2013-02-16T00:00:00-05:00</updated><id>http://localhost:4000/history/coldwar_ch1_part2</id><content type="html" xml:base="http://localhost:4000/history/coldwar_ch1_part2.html">&lt;h3 id=&quot;i&quot;&gt;&lt;center&gt;I.&lt;/center&gt;&lt;/h3&gt;
+
+&lt;p&gt;如果不知情的游客在1945年春天来到易北河畔，他们眼中的俄美军队可能没什么不同，这正如俄美社会在表面上的相似。美利坚合众国和苏维埃联盟都在革命的隆隆炮火中诞生；他们对自身意识形态的普适性都深信不疑，其领袖们都认为在自己地盘上的东西拿到其他地方也照样行得通；两个洲际国家的疆域都非常辽阔：他们当时分别是世界上面积第一和第三的国家；他们进入二战的方式都如此相象：1941年6月22日德国闪电入侵苏联，同年的12月7日日本偷袭 珍珠港，四天后希特勒借此对美宣战。然而，相似仅止于此。他们之间的差别实际是巨大的，这一点在地球上人尽皆知。&lt;/p&gt;
+
+&lt;p&gt;发生在二战之前一个半世纪的美国革命体现了对中央集权的深深不信任。立国的先贤们坚信受约束的权利才会带来自由和公平。一部天才的宪法, 在地理上与可能的对手的远隔重洋，大自然赐予的丰富资源，这一切使美国成为了一个强大的国家，这些在二战中得到了集中的反映。然而美国的成功是建立在严格限制政府对日常生活控制的之上的，而限制的实现有赖于思想的传播以及经济和政治体制的建立。尽管奴隶主义的遗毒仍然存在，土著居民也近乎灭绝，种族、性别和社会等方面的歧视问题仍然在持续，美国人民还是可以在1945年自豪地宣布他们生活在地球上最自由的国度。&lt;/p&gt;
+
+&lt;p&gt;布尔什维克革命发生在二战之前四分之一个世纪，它推崇集权统治，并将其作为推翻阶级敌人的手段，最终建立起一个将无产阶级革命传遍世界大本营，它。卡尔 马克思在1948年的共产党宣言上宣称工业资本家的崛起和对无产阶级的剥削同时使无产阶级得以壮大，这一切将最终使无产阶级得以解放。不甘于等待的符拉基米尔 伊里奇 列宁在1917年加速了历史进程，开始统治俄国并强制推行马克思主义。实际上马克思曾预言革命只会在发达的工业社会发生，而俄国并不满足这一条件。继任者斯大林改变了这一状况，为了更好的适应马克思列宁主义意识形态，他对俄国进行了大规模变革，将一个几乎没有自由传统的庞大农业国转变为一个毫无自由的高度工业化的国家。结果，苏维埃社会主义共和国联盟在二战后成为世界上最专制的国家。&lt;/p&gt;
+
+&lt;p&gt;战胜国之间的反差如此巨大，其实他们在1941年到1945年的战争经历也是如此。美国多线作战，在太平洋的对手是日本，在欧洲的是德国，但是伤亡率却出奇的低：在所有战场上加起来只有不到30万美国人死亡。由于远离战场，除了起初的珍珠港偷袭外，美国本土并未遭受实质性的攻击。美国的盟友英国的情况也差不多（英国战时死亡大约为357000人）。他们都能选择战斗的地点、时间和环境，这大大降低了战争开支和风险。不同的是，美国经济通过战争得到极大发展：战时花销使得美国的GDP在四年内几乎翻了一倍。如果真有战争能被算作“好战争”的话，对于美国来说这场战争就应该算上一个。&lt;/p&gt;
+
+&lt;p&gt;苏联就没有那么好的运气。卫国战争虽是单线作战，但无疑是历史上最惨烈的战争之一。城市和村镇被蹂躏，工业要么被摧毁要么被迫迁往乌拉尔山以东地区，人们如果不投降就只有在战场上死命抵抗，而且战场的地形和环境都是自己无法控制的。苏联在战争中的平民和军人的伤亡数字的统计不准确是出了名的，但大概还是有2700万人直接死于这场战争，这大约是美国的90倍。战争的花费是巨大的，可以说这个国家在1945年已经千疮百孔，只是勉强得以保全。一个现代观察家曾回忆到：卫国战争的有“最令人可怕的战场，同时也是俄国人最值得骄傲的记忆”。&lt;/p&gt;
+
+&lt;p&gt;相对于战争承担的不对称性，战胜国在战后安排方面要公平的得多。美国并没有承诺要改变自己漠视欧洲事务的传统——罗斯福甚至在德黑兰向斯大林保证要在战后两年内撤回美国军队。有鉴于1930年代大萧条时期经济低迷程度之深，美国在当时也无法保证战时繁荣会继续，或者民主会在业已扎根几个国家之外开花结果。美国和英国如果没有斯大林的帮助是无法战胜希特勒的，这一严酷的事实意味着第二次世界大战仅仅是反法西斯的胜利——而不是反极权主义及其对未来影响的胜利。&lt;/p&gt;
+
+&lt;p&gt;苏联尽管遭受重大损失，它的优势还是非常明显的。它本身就是欧洲的一部分，军队自然可以不从欧洲撤离。它的指令性经济已被证明可以实现完全就业，而资本主义民主却在战前无法做到这一点。它的意识形态在欧洲受到广泛尊重因为那里的共产主义者在很大程度上领导了对德国人的抵抗。在战胜希特勒中红军承担了不成比例的负担，这在道义上也允许苏联对战后安排施加实质性影响，甚至占主导地位。另外，在那时很容易让人相信，极权的共产主义和民主的资本主义一道都是未来潮流。&lt;/p&gt;
+
+&lt;p&gt;苏联还有一个独特优势——它的领导人经历过战争考验，这在战胜国中是独一无二的。罗斯福在1945年4月12日逝世，一个没有经验的问题副总统Harry 杜鲁门入主了白宫。三个月后丘吉尔在英国大选中意外落败，软弱的Clement 艾德礼为英国首相。对比起来，斯大林从1929年就已经成为苏联无可争议的统治者，他重塑了这个国家并且领导它取得的二次大战的胜利。他狡诈、强硬但在任何场合下都能做到镇静果断，这个克里姆林宫的独裁者清楚地知道他在战后岁月中想要些什么。而杜鲁门和Attlee和他们的国家在这个事情上却是犹豫不决。&lt;/p&gt;
+
+&lt;h3 id=&quot;ii&quot;&gt;&lt;center&gt;II.&lt;/center&gt;&lt;/h3&gt;
+
+&lt;p&gt;那斯大林到底想要些什么呢？先谈谈他是非常有意义的，在战后的三巨头中只有他能在保持权威的同时有时间来考虑事情的轻重缓急。斯大林在战后已经65岁了，他身心疲惫，虽然周围被谄媚者包围，内心却非常孤独——但仍然牢牢执掌着权柄。 他留着短髭，牙齿发黄，满脸麻子，眼珠是黄色的，一个美国外交官曾回忆到，”给我的印象象一个老迈的伤痕累累的猛虎… 普通人简直无法想象在他朴实无华外表下隐藏的精于算计，勃勃野心，对权利的贪恋，妒忌、冷酷和狡诈”。通过三十年代一系列的大清洗，斯大林早已排除了异己。随从们心理都明白，他一皱眉或一抬手都可能意味着生死。这个只有五英尺四英寸的大腹便便的矮个子巨人正把自己凌驾于一个大国之上。&lt;/p&gt;
+
+&lt;p&gt;斯大林战后目标依次为自身安全、政权、国家和意识形态。他设法确保在内部没人再能破坏他的规则，在外部没人再能威胁到他的国家的安全。世界其他地方的共产主义的利益，虽然也是会令人钦佩的事情，无论如何也无法和他一手建立起来的苏维埃政权相比。斯大林集自恋、偏执和绝对权威于一身：无论在苏联还是在国际共运中，他都是让人又敬又畏的人物。&lt;/p&gt;
+
+&lt;p&gt;斯大林也有痛苦纠结的地方。战争中过大的损失给了苏联在战后攫取更大利益的借口，但是这个国家业已被战争洗劫一空，仅靠自己的力量已经无法保全这些到手的利益。苏联需要和平、经济援助以及前盟国的外交默许。它甚至别无选择只能跟美英两国合作：就像他们要依靠斯大林来击败希特勒一样，斯大林如果想以合理的代价达到战后的目标，也要仰赖盎格鲁－美国的友善和青睐。因此他既不想要一场热战也不想要一场冷战。至于他是否会驾轻就熟地避开这些那就是另外一回事了。&lt;/p&gt;
+
+&lt;p&gt;斯大林对战时盟友以及他们的战后目标的理解更多是基于一厢情愿，而不是华盛顿和伦敦所乐见的基于对优先级的正确评估。在这一点上马克思列宁主义意识形态对斯大林的影响很大，因为他的错觉皆源于此。其中最重要的一点是来自列宁主义，即相信资本主义之间的合作都不会长久。它们本质上的贪婪将迟早占上峰，因为将利润置于政治之上的冲动往往是不可抗拒的，这也使得共产主义者们只需要耐心等待敌人的自我毁灭即可。“ 我们和资本主义中民主部分的结盟最终取得了胜利，因为阻止希特勒占领也是他们的利益之所在”在战争快结束的时候斯大林这样说道。 “今后我们也将和这部分资本主义决裂。”&lt;/p&gt;
+
+&lt;p&gt;资本主义存在危机的说法貌似是合理的。毕竟第一次世界大战是一场资本主义之间的战争；它为世界上第一个共产主义国家的建立提供了契机。战后尚存的资本主义国家在大萧条的时候也是只能自顾而无暇合作去挽救全球经济或者维持战后安排：纳粹德国趁势而起。斯大林相信随着第二次世界大战的结束，经济危机一定会重来。资本主义因此会需要苏联，而不是苏联需要资本主义。这也是为什么他会满心期待美国借给苏联几十亿美元用以重建的原因：因为不如此的话，美国在即将到来的全球危机中将无法找到市场去贩卖它的产品。&lt;/p&gt;
+
+&lt;p&gt;紧接着另一个资本主义超级大国，英国—— 斯大林一直低估了其衰落程度——跟美国由于经济上的对抗而翻脸也是迟早的事情 ： “资本主义国家间的战争仍然是不可避免的，”直到1952年他还坚持这么认为。在斯大林看来，历史总有一天会补偿苏联在二战中所遭受的灾难。为了达到他的目标，跟英美正面的冲突是没有必要的。他只需要等着资本主义国家间的内斗开始，到那时候恶心的欧洲人就会自己来拥抱共产主义这根救命稻草。&lt;/p&gt;
+
+&lt;p&gt;因此，斯大林的目标不是要重建欧洲的平衡，而是象希特勒那样谋求占领整个欧洲。1947年他曾不无惋惜地袒露道 “如果丘吉尔在法国北部开辟第二战场地时间再晚一年的话，红军就能打到法国…… 我们曾把玩过占领巴黎的想法”。但是与希特勒不同的是，斯大林并没有制定一个详尽地时间表。他热烈欢迎诺曼底登陆，尽管这次行动基本排除了红军不久就打到西欧的可能性：毕竟打败德国才是最重要的。他也从来没有忽略外交途径的努力，尤其是他至少在某一段时间曾期望通过与美国合作来达到目的。真难想象罗斯福如果未曾表明美国会避免在欧洲寻求自己的势力范围。因此，斯大林的这个设想堪称宏大：历史性地通过和平手段取得欧洲的统治权。但这个设想也并非没有瑕疵，因为它并没有考虑战后美国的目标也是不断变化的。&lt;/p&gt;
+
+&lt;h3 id=&quot;iii&quot;&gt;&lt;center&gt;III.&lt;/center&gt;&lt;/h3&gt;
+
+&lt;p&gt;美国人战后想得到点什么呢？毫无疑问也是安全，但是与斯大林不同，他们还无法肯定做些什么才能得到它。究其原因跟二战将美国置于一个尴尬的境地有关：对美国来说，在与其他地方相对隔离的情况下作为世界榜样的时代一去不返了。&lt;/p&gt;
+
+&lt;p&gt;纵观历史，美国人一直在试图这么做。他们不必担心自身安全问题，因为大洋将他们与有可能伤害他们的国家隔离开来。正如Thomas Paine在1776年的预言，“一个小岛可以永久地统治一个大陆”这简直是难以令人置信的，正是这一点使美国能从大不列颠英国独立出来。尽管海军力量非常强大，英国人从来也无力将其海军军力扩展到三千海里的海域之外，以将美国人留在帝国之内，或者阻止他们占领北美大陆。指望其他欧洲国家能做到这一点更是天方夜谭，因为伦敦的继任政府已经与美国达成协议，同意在西半球不再保留殖民存在。因此，美国享有一种特殊优待，即在保持大块势力范围的同时不必担心会侵犯其他大国的利益。&lt;/p&gt;
+
+&lt;p&gt;在思想领域美国的确也曾需求国际影响：要知道他们的独立宣言比人人生而平等这一激进主张更进一步。但是在独立后的140年间，他们并没有努力去实现他们的主张。美国只想做出个榜样；至于如何学习这个榜样或者在何种情况下学习这个榜样是其他国家自己的事情。”她满心憧憬着一切自由和独立，” 国务卿约翰 quincy 亚当斯在1821年宣布说，但“她只捍卫和维护她自身。”因此，尽管秉承着国际主义意识形态，美国人实践的确是孤立主义：这个国家还没有得出为了自身安全需要道德标准移植的结论。它的外交和军事政策的野心相对来说并不大，还远未达到人们对一个如此规模和实力国家的预期。&lt;/p&gt;
+
+&lt;p&gt;直到第一次世界大战美国人才打破这个模式。由于担心帝国主义德国可能会击败英国和法国，武德罗 威尔逊游用恢复欧洲力量平衡需要美国军队的参与这一理由来游说他的子民——他甚至用意识形态术语来力证这一地缘政治目标。他坚持这个世界必须得到“民主所需要的安全”。威尔逊还建议，作为和平安排的基础，应该成立国际联盟这一组织，主要目的是在国家间也能推行类似于法治精神这类东西，就像国家——至少是启蒙国家——在人民间推行这些东西一样。The idea that might alone makes right would, he hoped, disappear.&lt;/p&gt;
+
+&lt;p&gt;然而，威尔逊的愿景和重新恢复的平衡都被证明是不成熟的。一战的胜利并未使美国称为一个世界性强国；相反它使美国人认识到了过度承诺的危险性。威尔逊关于战后集体主义安全组织的计划已经超过了美国人民的预期。&lt;/p&gt;
+
+&lt;p&gt;在战时，罗斯福有他的四个优先。首先是支持盟友——主要是英国，苏联和（不太成功支持的）中国国民党——因为找不到其他办法获胜：美国无法独自去的抵挡德国和日本。第二是在战后安排上保证盟友间和谐，不如此的话战后和平的前景将堪忧。第三个优先与战后安排的本质有关。罗斯福期望他的盟友能支持一个能最大程度限制战争的方案。这意味着一个有权震慑甚或惩罚贪婪的新集体安全组织，和一个能防止经济衰退的新全球性经济组织。最后，这个安排还必须能推销给美国人民：罗斯福不想重复威尔逊的错误而把这个国家带离它准备去的方向。战后已无法恢复孤立主义，但是美国也没准备让战后世界成为战前的一个翻版。&lt;/p&gt;
+
+&lt;p&gt;最后，简单谈谈英国的目标。正如丘吉尔所说，他们的目标要简单的多：尽一切可能存活, 即使这意味着将盎格鲁——美国联盟的领导权拱手相让给美国，即使这意味着削弱大英帝国，即使这也意味着要与苏联合作，要知道丘吉尔早先曾经乐见这个布尔什维克革命后的政权倒台。英国将尽可能去影响美国人——他们立志做一回希腊人，当罗马人的导师——不过无论何时他们都不会和美国人翻脸。斯大林更期望一个独立的英国，能抗拒美国甚至对美国动武，但是这对那些实际影响了战时英国和战后重要战略的人来说简直太不可思议了。&lt;/p&gt;</content><author><name>Tao Sun</name></author><summary type="html">I.</summary></entry><entry><title type="html">中国的维权统治理想</title><link href="http://localhost:4000/politics/autocracy.html" rel="alternate" type="text/html" title="中国的维权统治理想" /><published>2013-01-02T00:00:00-05:00</published><updated>2013-01-02T00:00:00-05:00</updated><id>http://localhost:4000/politics/autocracy</id><content type="html" xml:base="http://localhost:4000/politics/autocracy.html">&lt;p&gt;威权法治模式在新加坡的成功燃起了很多学者的中国威权法治理想。威权法治在中国是否能行通是一个值得认真思考得问题。&lt;/p&gt;
+
+&lt;p&gt;新加坡威权法治的成功有其特殊的国际政治背景。我比较倾向将这种模式称为国际民主高压下的威权法治。在这种模式下，统治者虽然有威权，但是他们无时不刻地感到国际民主的高压，从而不感轻举妄动，破坏法治。一旦破坏，就可能受到国际间民主势力的强烈制裁。经济决定政治。新加坡在威权统治下外部的民主监督还能奏效，与其外向型经济结构有很大关系，要知道这个国家经济上所依赖的大多数国家（当然中国大陆除外）都是民主输出型的国家。从这个意义上讲，新加坡不能算作一个完全的无民主有法治的国家。&lt;/p&gt;
+
+&lt;p&gt;这种国际民主的高压对中国的撼动显然有限。从经济上看，中国虽然目前仍然是一个外向型经济体，但是其对外的依存度显然没有新加坡如此之高，同时庞大内部市场对外部资本也有非常大的吸引力。经济上的相对独立自主，抵消了很多外部民主压力。从社会层面上看，中国前有“不信邪”的毛泽东思想在前，后有21世纪后的民粹爱国主义教育，大多数民众特别是新一代年轻人对外部强加给中国东西形成了一种本能的反感，这种反感无意间帮助统治者抵御了一部分民主的高压。&lt;/p&gt;
+
+&lt;p&gt;在没有外部民主高压的情况下，在威权下建立法治的动力不足，这种模式能否建立尚需打一个大大的问号。即使在一个开明领导或者领导集体的努力下建立起来，在没有外部压力制约下，这种模式能走多远又是一个让人毫无信心的因素。一句话，中国的威权法治理想在目前社会条件下似乎仍然是一个遥不可及的梦。&lt;/p&gt;</content><author><name>Tao Sun</name></author><summary type="html">威权法治模式在新加坡的成功燃起了很多学者的中国威权法治理想。威权法治在中国是否能行通是一个值得认真思考得问题。</summary></entry></feed>
