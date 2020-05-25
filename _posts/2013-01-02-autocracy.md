@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "中国的维权统治理想"
-author: "Tao Sun"
+title: "中国的威权统治理想"
+author: "Tao Sun
 categories: Politics
 tags: []
 image:
